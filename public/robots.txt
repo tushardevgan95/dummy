@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://buy-tech.netlify.app/sitemap.xml

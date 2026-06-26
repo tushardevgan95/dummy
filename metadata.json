@@ -1,0 +1,8 @@
+{
+  "name": "Buytech Store",
+  "description": "Smart Appliances for Modern Living",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
