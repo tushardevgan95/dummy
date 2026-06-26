@@ -8,14 +8,14 @@ export default function Contact() {
         title="Contact Buytech | Support & Customer Service" 
         description="Get in touch with the Buytech team. We provide dedicated support for all your smart home appliance inquiries, repairs, and sales questions."
       />
-      <div className="bg-white py-16 border-b border-gray-200">
+      <header className="bg-white py-16 border-b border-gray-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl font-extrabold text-gray-900 tracking-tight">Contact Buytech for Smart Appliance Support</h1>
           <p className="mt-4 text-xl text-gray-500 max-w-2xl mx-auto">We'd love to hear from you. Get in touch with our team for any inquiries.</p>
         </div>
-      </div>
+      </header>
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16" aria-label="Contact Information and Form">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
           
           {/* Contact Information */}
@@ -25,7 +25,7 @@ export default function Contact() {
             <div className="space-y-8">
               <div className="flex items-start">
                 <div className="flex-shrink-0 h-12 w-12 rounded-full bg-blue-100 flex items-center justify-center border border-blue-200">
-                  <MapPin className="h-6 w-6 text-blue-600" />
+                  <MapPin className="h-6 w-6 text-blue-600" aria-hidden="true" />
                 </div>
                 <div className="ml-6">
                   <h3 className="text-lg font-medium text-gray-900">Office Address</h3>
@@ -39,7 +39,7 @@ export default function Contact() {
 
               <div className="flex items-start">
                 <div className="flex-shrink-0 h-12 w-12 rounded-full bg-green-100 flex items-center justify-center border border-green-200">
-                  <Phone className="h-6 w-6 text-green-600" />
+                  <Phone className="h-6 w-6 text-green-600" aria-hidden="true" />
                 </div>
                 <div className="ml-6">
                   <h3 className="text-lg font-medium text-gray-900">Contact Information</h3>
@@ -49,7 +49,7 @@ export default function Contact() {
 
               <div className="flex items-start">
                 <div className="flex-shrink-0 h-12 w-12 rounded-full bg-purple-100 flex items-center justify-center border border-purple-200">
-                  <Mail className="h-6 w-6 text-purple-600" />
+                  <Mail className="h-6 w-6 text-purple-600" aria-hidden="true" />
                 </div>
                 <div className="ml-6">
                   <h3 className="text-lg font-medium text-gray-900">Email Us</h3>
@@ -61,7 +61,7 @@ export default function Contact() {
 
               <div className="flex items-start">
                 <div className="flex-shrink-0 h-12 w-12 rounded-full bg-yellow-100 flex items-center justify-center border border-yellow-200">
-                  <Clock className="h-6 w-6 text-yellow-600" />
+                  <Clock className="h-6 w-6 text-yellow-600" aria-hidden="true" />
                 </div>
                 <div className="ml-6">
                   <h3 className="text-lg font-medium text-gray-900">Business Hours</h3>
@@ -75,10 +75,10 @@ export default function Contact() {
             <div className="mt-10 pt-8 border-t border-gray-200">
                <h3 className="text-lg font-medium text-gray-900 mb-4">Follow Us</h3>
                <div className="flex space-x-6">
-                  <a href="#" className="text-gray-400 hover:text-blue-600 font-medium transition-colors">Facebook</a>
-                  <a href="#" className="text-gray-400 hover:text-pink-600 font-medium transition-colors">Instagram</a>
-                  <a href="#" className="text-gray-400 hover:text-blue-800 font-medium transition-colors">LinkedIn</a>
-                  <a href="#" className="text-gray-400 hover:text-red-600 font-medium transition-colors">YouTube</a>
+                  <a href="#" className="text-gray-400 hover:text-blue-600 font-medium transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500 rounded px-1 -mx-1" aria-label="Visit our Facebook page">Facebook</a>
+                  <a href="#" className="text-gray-400 hover:text-pink-600 font-medium transition-colors focus:outline-none focus:ring-2 focus:ring-pink-500 rounded px-1 -mx-1" aria-label="Visit our Instagram page">Instagram</a>
+                  <a href="#" className="text-gray-400 hover:text-blue-800 font-medium transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500 rounded px-1 -mx-1" aria-label="Visit our LinkedIn page">LinkedIn</a>
+                  <a href="#" className="text-gray-400 hover:text-red-600 font-medium transition-colors focus:outline-none focus:ring-2 focus:ring-red-500 rounded px-1 -mx-1" aria-label="Visit our YouTube channel">YouTube</a>
                </div>
             </div>
           </div>
@@ -114,7 +114,7 @@ export default function Contact() {
           </div>
 
         </div>
-      </div>
+      </section>
     </div>
   );
 }

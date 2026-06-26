@@ -52,14 +52,14 @@ export default function Blog() {
         title="Smart Home Appliance Blog & Buying Guides | Buytech" 
         description="Stay updated with the Buytech blog. Read expert buying guides, smart home trends, and maintenance tips for your modern appliances."
       />
-      <div className="bg-white py-16 border-b border-gray-200">
+      <header className="bg-white py-16 border-b border-gray-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl font-extrabold text-gray-900 tracking-tight">Latest Insights, Trends, & Guides for Smart Appliances</h1>
           <p className="mt-4 text-xl text-gray-500 max-w-2xl mx-auto">Stay updated with the latest trends, tips, and guides on smart home appliances.</p>
         </div>
-      </div>
+      </header>
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16" aria-label="Blog Articles">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {articles.map((article) => (
              <article key={article.id} className="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col hover:shadow-md transition-shadow">
@@ -68,23 +68,25 @@ export default function Blog() {
                </div>
                <div className="p-6 flex flex-col flex-grow">
                  <div className="flex items-center text-sm text-gray-500 mb-3 space-x-4">
-                   <span className="flex items-center"><Calendar className="h-4 w-4 mr-1" /> {article.date}</span>
-                   <span className="flex items-center"><User className="h-4 w-4 mr-1" /> {article.author}</span>
+                   <span className="flex items-center"><Calendar className="h-4 w-4 mr-1" aria-hidden="true" /> {article.date}</span>
+                   <span className="flex items-center"><User className="h-4 w-4 mr-1" aria-hidden="true" /> {article.author}</span>
                  </div>
-                 <h2 className="text-xl font-bold text-gray-900 mb-3 leading-tight hover:text-blue-600 transition-colors cursor-pointer">
-                   {article.title}
+                 <h2 className="text-xl font-bold text-gray-900 mb-3 leading-tight">
+                   <a href="#" className="hover:text-blue-600 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500 rounded px-1 -mx-1">
+                     {article.title}
+                   </a>
                  </h2>
                  <p className="text-gray-600 mb-6 flex-grow line-clamp-3">
                    {article.excerpt}
                  </p>
-                 <a href="#" className="inline-flex items-center text-blue-600 font-medium hover:text-blue-800 transition-colors">
-                   Read More <ArrowRight className="ml-1.5 h-4 w-4" />
+                 <a href="#" className="inline-flex items-center text-blue-600 font-medium hover:text-blue-800 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500 rounded px-1 -mx-1" aria-label={`Read more about ${article.title}`}>
+                   Read More <ArrowRight className="ml-1.5 h-4 w-4" aria-hidden="true" />
                  </a>
                </div>
              </article>
           ))}
         </div>
-      </div>
+      </section>
     </div>
   );
 }

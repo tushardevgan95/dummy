@@ -115,17 +115,17 @@ export default function Products() {
         title="Shop Smart Home Appliances | Buytech Products" 
         description="Browse Buytech's comprehensive catalog of smart home appliances, including advanced refrigerators, 4K smart TVs, robotic vacuums, and air purifiers."
       />
-      <div className="bg-white py-12 border-b border-gray-200">
+      <header className="bg-white py-12 border-b border-gray-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl font-extrabold text-gray-900 tracking-tight">Explore Our Premium Smart Home Appliances</h1>
           <p className="mt-4 text-xl text-gray-500 max-w-2xl mx-auto">Explore our premium range of smart home appliances designed to elevate your living space.</p>
         </div>
-      </div>
+      </header>
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12" aria-label="Products Catalog">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           {products.map((product) => (
-            <div key={product.id} className="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col md:flex-row transition-shadow hover:shadow-md">
+            <article key={product.id} className="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col md:flex-row transition-shadow hover:shadow-md">
               <div className="md:w-2/5 p-6 bg-gray-50 flex items-center justify-center">
                  <img src={product.image} alt={product.name} className="w-full h-48 object-contain mix-blend-multiply" referrerPolicy="no-referrer" />
               </div>
@@ -139,37 +139,40 @@ export default function Products() {
                   <ul className="space-y-2">
                     {product.features.map((feature, idx) => (
                       <li key={idx} className="flex items-start">
-                        <CheckCircle2 className="h-5 w-5 text-green-500 mr-2 flex-shrink-0 mt-0.5" />
+                        <CheckCircle2 className="h-5 w-5 text-green-500 mr-2 flex-shrink-0 mt-0.5" aria-hidden="true" />
                         <span className="text-gray-700 text-sm leading-tight pt-0.5">{feature}</span>
                       </li>
                     ))}
                   </ul>
                 </div>
-                <button className="w-full bg-blue-600 hover:bg-blue-700 text-white font-medium py-3 px-4 rounded-lg transition-colors shadow-sm">
+                <button 
+                  className="w-full bg-blue-600 hover:bg-blue-700 text-white font-medium py-3 px-4 rounded-lg transition-colors shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
+                  aria-label={`Add ${product.name} to Cart`}
+                >
                   Add to Cart
                 </button>
               </div>
-            </div>
+            </article>
           ))}
         </div>
-      </div>
+      </section>
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-8">
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-8" aria-label="Warranty Information">
          <div className="bg-blue-50 border border-blue-100 rounded-2xl p-8 md:p-12 text-center md:text-left flex flex-col md:flex-row items-center justify-between shadow-sm">
             <div className="mb-6 md:mb-0 md:mr-8 flex-grow">
               <div className="flex items-center justify-center md:justify-start mb-4">
-                <Shield className="h-8 w-8 text-blue-600 mr-3" />
+                <Shield className="h-8 w-8 text-blue-600 mr-3" aria-hidden="true" />
                 <h2 className="text-2xl font-bold text-blue-900">Product Warranty & Guarantees</h2>
               </div>
               <p className="text-blue-800 mb-4 text-lg">All buytech products come with our signature commitment to quality:</p>
               <ul className="flex flex-col sm:flex-row justify-center md:justify-start gap-4 sm:gap-8 text-blue-700 font-medium">
-                <li className="flex items-center"><CheckCircle2 className="h-5 w-5 mr-2" /> 2-Year Manufacturer Warranty</li>
-                <li className="flex items-center"><CheckCircle2 className="h-5 w-5 mr-2" /> Free Technical Support</li>
-                <li className="flex items-center"><CheckCircle2 className="h-5 w-5 mr-2" /> Easy Replacement Policy</li>
+                <li className="flex items-center"><CheckCircle2 className="h-5 w-5 mr-2" aria-hidden="true" /> 2-Year Manufacturer Warranty</li>
+                <li className="flex items-center"><CheckCircle2 className="h-5 w-5 mr-2" aria-hidden="true" /> Free Technical Support</li>
+                <li className="flex items-center"><CheckCircle2 className="h-5 w-5 mr-2" aria-hidden="true" /> Easy Replacement Policy</li>
               </ul>
             </div>
          </div>
-      </div>
+      </section>
     </div>
   );
 }
