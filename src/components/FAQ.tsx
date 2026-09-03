@@ -2,29 +2,29 @@ import { useState } from "react";
 
 const faqs = [
   {
-    question: "What products are available on the website?",
+    question: "What types of smart home appliances does BuyTech offer?",
     answer:
-      "Our website features a range of fashion products designed for different styles and preferences.",
+      "BuyTech offers a range of smart home appliances and consumer electronics designed to make everyday living more convenient, efficient, and connected.",
   },
   {
-    question: "How can I find the right size?",
+    question: "How can smart home appliances make daily life easier?",
     answer:
-      "You can check the size information provided with each product to choose the most suitable option.",
+      "Smart home appliances can simplify everyday tasks through convenient features such as remote control, automation, energy management, and smart connectivity.",
   },
   {
-    question: "Can I return or exchange a product?",
+    question: "Are smart appliances energy efficient?",
     answer:
-      "Return and exchange availability depends on the product and the applicable store policy.",
+      "Many modern smart appliances include energy-saving features that can help monitor and manage energy usage, potentially making everyday appliance use more efficient.",
   },
   {
-    question: "How long does delivery take?",
+    question: "Can I control smart appliances remotely?",
     answer:
-      "Delivery time depends on your location and the shipping option selected during checkout.",
+      "Many smart appliances can be connected to compatible mobile apps or smart home systems, allowing users to monitor and control supported functions remotely.",
   },
   {
-    question: "How can I contact customer support?",
+    question: "How do I choose the right smart appliance?",
     answer:
-      "You can contact our customer support team through the contact section of the website.",
+      "Consider the appliance's features, size, energy efficiency, smart connectivity, compatibility, and your specific household requirements before making a choice.",
   },
 ];
 
