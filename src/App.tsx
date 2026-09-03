@@ -7,6 +7,7 @@ import Services from './pages/Services';
 import Blog from './pages/Blog';
 import Contact from './pages/Contact';
 import { Routes, Route } from 'react-router-dom';
+import FAQ from "./components/FAQ";
 
 export default function App() {
   return (
@@ -29,3 +30,16 @@ export default function App() {
     </div>
   );
 }
+function App() {
+  return (
+    <>
+      {/* Your existing website */}
+
+      <FAQ />
+
+      {/* Your existing footer */}
+    </>
+  );
+}
+
+export default App;

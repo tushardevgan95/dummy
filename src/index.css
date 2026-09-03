@@ -10,3 +10,36 @@
     scroll-behavior: auto !important;
   }
 }
+.faq {
+  max-width: 900px;
+  margin: 60px auto;
+  padding: 20px;
+}
+
+.faq h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.faq-item {
+  border-bottom: 1px solid #ddd;
+}
+
+.faq-question {
+  width: 100%;
+  padding: 20px 5px;
+  background: none;
+  border: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  text-align: left;
+}
+
+.faq-answer {
+  padding: 0 5px 20px;
+  line-height: 1.7;
+}
