@@ -90,11 +90,12 @@ export default function Home() {
                 <h3 className="text-lg font-bold text-gray-900 mb-2">Smart Air Purifier X5</h3>
                 <p className="text-sm text-gray-600 mb-4 line-clamp-2 flex-grow">Breathe cleaner air with intelligent filtration and real-time air quality monitoring.</p>
                 <div className="flex justify-between items-center mt-auto">
-                  <span className="text-xl font-bold text-blue-600">$299</span>
+                  <span className="text-xl font-bold text-blue-600">₹24,999</span>
                   <button className="px-4 py-2 bg-gray-900 text-white text-sm font-medium rounded hover:bg-gray-800 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2" aria-label="Add Smart Air Purifier X5 to Cart">Add to Cart</button>
                 </div>
               </div>
             </article>
+
             {/* Product 2 */}
             <article className="bg-white flex flex-col rounded-xl border border-gray-200 overflow-hidden hover:shadow-lg transition-shadow group">
               <div className="h-48 bg-gray-100 flex items-center justify-center p-4">
@@ -104,11 +105,12 @@ export default function Home() {
                 <h3 className="text-lg font-bold text-gray-900 mb-2">UltraCool Refrigerator 450L</h3>
                 <p className="text-sm text-gray-600 mb-4 line-clamp-2 flex-grow">Energy-saving refrigerator with smart temperature control and spacious storage.</p>
                 <div className="flex justify-between items-center mt-auto">
-                  <span className="text-xl font-bold text-blue-600">$899</span>
+                  <span className="text-xl font-bold text-blue-600">₹84,999</span>
                   <button className="px-4 py-2 bg-gray-900 text-white text-sm font-medium rounded hover:bg-gray-800 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2" aria-label="Add UltraCool Refrigerator 450L to Cart">Add to Cart</button>
                 </div>
               </div>
             </article>
+
             {/* Product 3 */}
             <article className="bg-white flex flex-col rounded-xl border border-gray-200 overflow-hidden hover:shadow-lg transition-shadow group">
               <div className="h-48 bg-gray-100 flex items-center justify-center p-4">
@@ -118,11 +120,12 @@ export default function Home() {
                 <h3 className="text-lg font-bold text-gray-900 mb-2">Quantum Smart TV 55"</h3>
                 <p className="text-sm text-gray-600 mb-4 line-clamp-2 flex-grow">Experience stunning 4K visuals and immersive sound powered by the latest smart technology.</p>
                 <div className="flex justify-between items-center mt-auto">
-                  <span className="text-xl font-bold text-blue-600">$699</span>
+                  <span className="text-xl font-bold text-blue-600">₹64,999</span>
                   <button className="px-4 py-2 bg-gray-900 text-white text-sm font-medium rounded hover:bg-gray-800 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2" aria-label="Add Quantum Smart TV 55 inch to Cart">Add to Cart</button>
                 </div>
               </div>
             </article>
+
             {/* Product 4 */}
             <article className="bg-white flex flex-col rounded-xl border border-gray-200 overflow-hidden hover:shadow-lg transition-shadow group">
               <div className="h-48 bg-gray-100 flex items-center justify-center p-4">
@@ -132,7 +135,7 @@ export default function Home() {
                 <h3 className="text-lg font-bold text-gray-900 mb-2">TurboWash Washing Machine</h3>
                 <p className="text-sm text-gray-600 mb-4 line-clamp-2 flex-grow">High-performance washing machine with AI-powered fabric care.</p>
                 <div className="flex justify-between items-center mt-auto">
-                  <span className="text-xl font-bold text-blue-600">$549</span>
+                  <span className="text-xl font-bold text-blue-600">₹49,999</span>
                   <button className="px-4 py-2 bg-gray-900 text-white text-sm font-medium rounded hover:bg-gray-800 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2" aria-label="Add TurboWash Washing Machine to Cart">Add to Cart</button>
                 </div>
               </div>
