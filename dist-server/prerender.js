@@ -386,7 +386,7 @@ function Footer() {
 }
 function SEO({ title, description }) {
   const location = useLocation();
-  const canonicalUrl = `https://buy-tech.netlify.app${location.pathname === "/" ? "" : location.pathname}`;
+  const canonicalUrl = `https://https://dummy-chi-seven.vercel.app/${location.pathname === "/" ? "" : location.pathname}`;
   return /* @__PURE__ */ jsxDEV(Helmet, { children: [
     /* @__PURE__ */ jsxDEV("title", { children: `${title} | Buytech` }, void 0, false, {
       fileName: "/app/applet/src/components/SEO.tsx",

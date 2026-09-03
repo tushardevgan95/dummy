@@ -8,7 +8,7 @@ interface SEOProps {
 
 export default function SEO({ title, description }: SEOProps) {
   const location = useLocation();
-  const canonicalUrl = `https://buy-tech.netlify.app${location.pathname === '/' ? '' : location.pathname}`;
+  const canonicalUrl = `https://https://dummy-chi-seven.vercel.app/${location.pathname === '/' ? '' : location.pathname}`;
 
   return (
     <Helmet>
